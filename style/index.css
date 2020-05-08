@@ -215,11 +215,7 @@ footer nav a {
         justify-content: space-between;
         margin: 0 1%;
     }
-    
-    .one{
-        background-color: blue;
-    }
-    
+
     .container {
         width: 100%;
         margin: 0 auto;
@@ -236,6 +232,16 @@ footer nav a {
         width: 100%; 
     }
 
+    .middle-content .boxes {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    .middle-content .boxes .box {
+        flex-direction: column;
+        flex: 40%;
+    }
+
 }
 
 @media(max-width: 500px) {
@@ -243,6 +249,26 @@ footer nav a {
         width: 100%;
         margin: 0 auto;
     }
+
+    .middle-content .boxes .box {
+        flex-direction: column;
+        flex: 100%
+    }
+
+    .middle-content .boxes {
+        width: 50%;
+    }
+
+    .bottom-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+    
+        .bottom-content .text-container {
+            width: 100%; 
+        }
 
 }
 
