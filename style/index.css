@@ -54,36 +54,41 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 4%;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
+    margin: 0 17%;
 }
 
 nav a {
     color: black;
-    padding-top: 1%;
+    padding-top: 3%;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .jumbo {
     display: flex;
     justify-content: center;
+    margin: 2% 0;
 }
 
 .container {
-    width: 800px;
+    width: 58%;
     margin: 0 auto;
 }
 
@@ -91,19 +96,19 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2%;
+    border-bottom: 0.1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2%;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2%;
+    border-bottom: 0.1rem dashed black;
 }
 
 .middle-content h2 {
@@ -119,13 +124,14 @@ nav a {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2.1% 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 .middle-content .boxes .one {
@@ -171,7 +177,7 @@ nav a {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2%;
     justify-content: space-around;
 }
 
@@ -193,11 +199,46 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2% 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* tablet view */
+@media(max-width: 800px){
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1%;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%; 
+    }
+
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
